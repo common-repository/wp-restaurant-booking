@@ -1,0 +1,527 @@
+/**
+ * Admin Style Sheet
+ *
+ * @author ilGhera
+ * @package wc-restaurant-booking/css
+ * @version 0.0.9
+ */
+
+.wprb-admin {
+	display: none;
+}
+
+.wprb-form {
+	margin:3rem 0 0 0;
+}
+
+.one-of {
+	padding-bottom: 3rem;
+	border-bottom: 1px solid #ccc;
+}
+
+#premium-check {
+	margin:20px 0;
+}
+
+.premium-message {
+	width: 280px;
+	max-width: 100%;
+	font-family: 'Raleway', 'Open Sans',sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	margin:20px 0 70px;
+	padding: 12px 20px;
+	color: #FFF;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+	background-color: #F29400;
+	background-repeat: no-repeat;
+	background-position: 10px 2px;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.premium-message.active {
+	background-color: #5BB75B;
+	background-image: url('../images/active.png');
+	padding: 12px 20px 12px 100px;
+}
+
+a.message {
+	text-decoration: none;
+}
+
+#premium-check #premium-key {
+	width: 300px;
+	color:#777;
+	font-size: 18px;
+	padding:6px;
+}
+
+#submit-key, #submit-key:focus {
+	height:auto;
+	padding:5px 15px 5px 15px !important;
+	top: -2px;
+	margin:0;
+	position: relative;
+}
+
+#submit-key:active {
+	top: 2px;
+}
+
+.nav-tab.not-available, .nav-tab.not-available:hover {
+	border-width: 1px 1px medium;
+    border-style: solid solid none;
+    border-color: #CCC #CCC -moz-use-text-color;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    background: #E4E4E4 none repeat scroll 0% 0%;
+    display: inline-block;
+    text-decoration: none;
+    opacity:0.4;
+}
+
+#wprb-orders span.wprb-copy-url {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 4px 10px;
+	color: #FFF;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+	background-color: #5BB75B;
+	background-image: linear-gradient(to bottom, #62C462, #51A351);
+	background-repeat: repeat-x;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.wprb {
+	list-style: inside disc;	
+}
+
+.wprb li {
+	padding-left:15px;	
+}
+
+h3.wprb {
+	font-size: 1.3em;
+	margin: 2em 0px 1em 0;
+}
+
+h3.wprb.main {
+	font-size: 32px;
+	font-weight: 200;
+	line-height: 35px;
+}
+
+.wrap-left {
+	float: left;
+	width: 70%;
+}
+
+.wrap-right {
+	float:left; 
+	width:30%; 
+	text-align:center; 
+	padding-top:3rem;
+}
+
+.clearer {
+	clear:both;
+}
+
+form#wprb-premium-key {
+	margin: 2rem 0;
+}
+
+form#wprb-premium-key label {
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+
+form#wprb-premium-key input[type="text"] {
+	width: 560px;
+}
+
+form#wprb-premium-key input.button {
+	margin-top: 1rem;
+}
+
+.wprb-set-reservations-day {
+	margin-bottom: 1.3rem;
+}
+
+.wprb-col {
+	float: left;
+	width: 25%;
+}
+
+.wprb-col input {
+	max-width: 94%;
+	margin: 0;
+}
+
+.wprb-set-reservations h4 {
+	margin: 0.5rem 0;
+}
+
+.wprb-set-reservations lable {
+	font-style: italic;
+	display: inline-block;
+}
+
+[class*="wprb-hours-element-"] {
+	display: block;
+}
+
+.hours-element label,
+.last-minute-element label {
+	padding: 0 0.5rem;
+}
+
+label[for=wprb-bookable-hours-from],
+label[for=wprb-last-minute-date] {
+	padding-left: 0;
+}
+
+input#wprb-last-minute-date {
+	width: 130px;
+}
+
+.wprb-bookable-hours-from,
+.wprb-last-minute-from,
+.wprb-bookable-hours-to,
+.wprb-last-minute-to,
+.wprb-bookable-hours-every,
+.wprb-last-minute-people {
+	width: 80px;
+}
+
+.wprb-add-hours-container,
+.wprb-remove-hours-container,
+.wprb-add-last-minute-container,
+.wprb-remove-last-minute-container {
+	display: inline;
+	position: relative;
+	top: 0.3rem;
+	cursor: pointer;
+}
+
+.add-hours-hover,
+.remove-hours-hover,
+.add-last-minute-hover,
+.remove-last-minute-hover {
+	display: none;
+}
+
+.add-hours, 
+.add-hours-hover,
+.remove-hours, 
+.remove-hours-hover,
+.add-last-minute, 
+.add-last-minute-hover,
+.remove-last-minute, 
+.remove-last-minute-hover {
+	margin-left: 2px;
+}
+
+.wprb-add-hours-container:hover .add-hours,
+.wprb-remove-hours-container:hover .remove-hours,
+.wprb-add-last-minute-container:hover .add-last-minute,
+.wprb-remove-last-minute-container:hover .remove-last-minute {
+	display: none;
+}
+
+.wprb-add-hours-container:hover .add-hours-hover,
+.wprb-remove-hours-container:hover .remove-hours-hover,
+.wprb-add-last-minute-container:hover .add-last-minute-hover,
+.wprb-remove-last-minute-container:hover .remove-last-minute-hover {
+	display: inline;
+}
+
+.wprb-reservation input,
+.wprb-reservation textarea,
+.wprb-reservation select {
+	width: 300px;
+}
+
+.wprb-status-label {
+	display: inline-block;
+	width: 74px;
+	text-align: center;
+	padding: .4em 0 .45em;
+	font-size: 90%;
+	font-weight: 600;
+	line-height: 1;
+	color: #fff;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+	cursor: pointer;
+}
+
+.wprb-status-label:hover,
+.wprb-status-label:visited,
+.wprb-status-label:active {
+	color: #fff;
+}
+.wprb-status-label.received {
+	background-color: #f0ad4e;
+}
+
+.wprb-status-label.managed {
+	background-color: #5bc0de;
+}
+
+.wprb-status-label.completed {
+	background-color: #5cb85c;
+}
+
+.wprb-status-label.expired {
+	background-color: #d9534f;
+}
+
+.widefat thead tr th {
+	width: 12%;
+}
+
+.widefat thead tr th#title {
+	width: 35%;
+}
+
+#wprb-status-modal h3 {
+	text-align: center;
+}
+
+#wprb-status-modal ul {
+	padding: 1rem 0 2rem;
+}
+
+#wprb-status-modal ul li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+#wprb-status-modal ul li a {
+	text-decoration: none;
+	opacity: 0.2;
+}
+
+#wprb-status-modal ul li a:hover,
+#wprb-status-modal ul li a.active {
+	opacity: 1;
+}
+
+.booking-hours {
+	width: 300px;
+	margin-bottom: 1rem;
+}
+
+.booking-hours ul {
+	height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.booking-hours ul li {
+	width: 25%;
+	float: left;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.booking-hours ul li input {
+	border: 1px solid #cdcdcd; /*temp*/
+	box-shadow: none;
+	width: 90%;
+	height: 30px;
+	margin-bottom: 8px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	border-radius: 20px;
+	font-size: 12px;
+	text-align: center;
+	color: #212121;
+	cursor: pointer;
+}
+
+.booking-hours ul.last-minute li input {
+	border-color: #f5c6cb;
+	box-shadow: none;
+	width: 90%;
+	height: 30px;
+	margin-bottom: 8px;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #f8d7da;
+	border-radius: 20px;
+	font-size: 12px;
+	text-align: center;
+	color: #721c24;
+}
+
+.booking-hours ul li input:hover,
+.booking-hours ul li input.active {
+	color: #fff;
+	background: #f5b016;
+}
+
+.booking-hours ul li.not-available {
+	opacity: 0.4;
+}
+
+.booking-hours ul li.not-available input {
+	cursor: inherit;
+}
+
+.booking-hours ul li.not-available input:hover,
+.booking-hours ul li.not-available input.active {
+	color: inherit;
+	background: inherit;
+}
+
+.wprb-hours {
+	display: none;
+}
+
+p.wprb-step-description.last-minute {
+	margin-top: 2.5rem;
+	margin-bottom: 0;
+	font-style: italic;
+	font-weight: bold;
+}
+
+ul.last-minute {
+	list-style: none;
+	margin: 0;
+	padding: 2rem 0 0;
+	height: 80px;
+}
+
+td.column-time span.last-minute {
+	color: red;
+}
+
+tr.wprb-user-notification-field textarea {
+	height: 220px;
+}
+
+tr.wprb-user-notification-field .description .shortcodes {
+	display: block;
+	width: 350px;
+	margin-bottom: 0.5rem;
+}
+
+tr.wprb-user-notification-field .description .shortcodes code {
+	font-style: normal;
+	font-size: 80%;
+	cursor: pointer;
+}
+
+input.wprb-time {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+span.external {
+	font-size: 70%;
+	padding: 2px 8px;
+	background-color: #cdcdcd;
+	border-radius: 3px;
+	color: #fff;
+	margin-left: 0.5rem;
+}
+
+.wprb-external-container {
+	display: none;
+	margin: 2rem 0; 
+}
+
+.wprb-external-container a {
+	display: inline-block;
+	width: 58px;
+	border: 1px solid #cdcdcd;
+	color: inherit;
+	padding: 0.5rem 0;
+	margin: 0 3px; 
+	text-align: center;
+}
+
+.wprb-external-container a.only {
+	width: auto;
+	padding: 0.5rem 1rem;
+	margin: 0; 
+}
+
+.wprb-external-container a:hover,
+.wprb-external-container a.active {
+	color: #fff;
+	background: #cdcdcd; 
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.wprb-notes-icon {
+	opacity: 0.6;
+	width: 24px;
+}
+
+.tablenav .wprb-date {
+	height: 28px;
+	margin-right: 6px;
+}
+
+#wprb-button-position {
+	width: 160px;
+}
+
+.wprb.label-warning.premium {
+    display: inline-block;
+    margin: 10px 0 0;
+	padding: 7px 14px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+	background-color: #f0ad4e;
+	cursor: pointer;
+}
+
+.label-warning a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.label-warning a:hover {
+	color: #0073aa;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.wrap-left {
+		float: none;
+		width: 100%;
+	}
+
+	.wrap-right {
+		float: none; 
+		width: 100%; 
+		text-align: center; 
+		padding-top: 3rem;
+	}
+
+
+}
